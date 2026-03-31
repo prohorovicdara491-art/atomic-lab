@@ -34,7 +34,6 @@ cb9b070 docs: add analysis of atomicity risks
 
 9dc9c14 Initial setup
 
-text
 
 ### Анализ:
 
