@@ -1,6 +1,7 @@
 # Валидация
 def validate_email(email):
-    if "@" not in email:
+    # ФИКС: добавлена проверка на пустую строку
+    if not email or "@" not in email:
         return False
     return True
 
@@ -15,7 +16,7 @@ def process_user_data(user_data):
     user_record = user_data
     
     if validate_email(user_record['email']):
-        status = get_user_status(user_record)  # ДОБАВЛЯЕМ статус
+        status = get_user_status(user_record)
         print(f"Processing user: {user_record['name']} (status: {status})")
         return user_record
     else:
@@ -24,8 +25,9 @@ def process_user_data(user_data):
 
 # Вывод в консоль
 def main():
-    user = {"name": "John", "email": "john@example.com"}  # ПОКА БЕЗ is_active
-    result = process_user_data(user)
+    # ДОБАВЛЯЕМ is_active
+    user_info = {"name": "John", "email": "john@example.com", "is_active": True}
+    result = process_user_data(user_info)
     print("Done")
 
 if __name__ == "__main__":
