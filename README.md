@@ -127,5 +127,3 @@ Makefile автоматизирует команды. Вместо того чт
 | 4 | Созданы Makefile, pre-commit, тесты | ✅ |
 
 ---
-
-**Ссылка на репозиторий:** https://github.com/prohorovicdara491-art/atomic-lab
