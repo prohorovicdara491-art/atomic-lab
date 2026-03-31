@@ -33,7 +33,6 @@ cb9b070 docs: add analysis of atomicity risks
 
 9dc9c14 Initial setup
 
-text
 
 **Вывод:** Все 11 коммитов атомарные — каждый содержит только одно изменение.
 
@@ -52,7 +51,6 @@ pip install -r requirements.lock.txt
 python app.py
 pytest test_app.py -v
 
-text
 
 **Результат:**
 Processing user: John (status: active)
@@ -60,7 +58,7 @@ Done
 
 ============================== 8 passed in 0.04s ==============================
 
-text
+
 
 **Вывод:** Приложение восстановилось из lock-файла, все тесты пройдены.
 
@@ -75,7 +73,6 @@ git commit -m "test"
 black....................................................................Failed
 flake8...................................................................Failed
 
-text
 
 **Вывод:** Pre-commit заблокировал коммит с плохим стилем кода.
 
