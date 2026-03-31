@@ -66,7 +66,6 @@ cb9b070 docs: add analysis of atomicity risks
 
 ### Процесс восстановления окружения:
 
-```bash
 # 1. Выход из текущего виртуального окружения
 deactivate
 
@@ -129,7 +128,7 @@ test_app.py::TestProcessUserData::test_process_invalid_email PASSED
 https://github.com/prohorovicdara491-art/atomic-lab/raw/main/screenshots/pre-commit.png
 
 Создание коммита с нарушением стиля:
-bash
+
 # Создание файла с нарушением стиля (лишние пробелы в скобках)
 echo "def bad_function(  ):" > test_bad.py
 echo "    print('test')" >> test_bad.py
@@ -204,7 +203,7 @@ git bisect точно указывает на конкретный коммит,
 
 Пример из практики:
 
-bash
+
 # Атомарные коммиты
 e7488e5 refactor: rename variables          # Ошибки нет
 9c74a00 feat: add user status function      # Ошибка появилась здесь!
